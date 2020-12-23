@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-pre.code
-{
-	background-color:#e6eeff;
-	font-size:15px;
-    font-style:normal;
-	margin:10px;
-    padding:0px;
-    border:none;
+pre.code {
+  background-color: #e6eeff;
+  font-size: 15px;
+  font-style: normal;
+  margin: 10px;
+  padding: 0px;
+  border: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-h1,h3{
-    font-family: "montserrat";
+h1,
+h3 {
+  font-family: 'montserrat';
 }
-h1{
-    font-weight: 400
+h1 {
+  font-weight: 400;
 }
