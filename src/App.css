@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 pre.code {
-  background-color: #e6eeff;
+  background-color: #1a1a1a;
+  color:white;
   font-size: 15px;
   font-style: normal;
   margin: 10px;
-  padding: 0px;
+  padding: 20px;
   border: none;
 }
 @media only screen and (max-width: 600px) {
@@ -18,7 +19,9 @@ ul {
 h1,
 h3 {
   font-family: 'montserrat';
+  color:white;
 }
 h1 {
   font-weight: 400;
+  color:white;
 }
