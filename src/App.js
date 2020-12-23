@@ -40,14 +40,20 @@ render()  {
       <div className="container ">
         {
           repo_data.map((data)=>{
-            
-            return (<ul>
-            <h3 className="text-center">{data.data.name}</h3>
+            if(data.data.name !=='README.md'){
+            return (
+              
+              <ul>
+              <h3 className="text-center">{data.data.name}</h3>
               <li><pre className="code"><code>{atob(data.data.content)}</code></pre></li>
               </ul>
               )
             
-            })
+            }else {
+              return null;
+            }
+            }
+            )
         }
       </div>
       </div>
