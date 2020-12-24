@@ -8,14 +8,6 @@ pre.code {
   padding: 20px;
   border: none;
 }
-@media only screen and (max-width: 600px) {
-    pre.code {
-        font-size: 10px
-    }
-  }
-ul {
-  list-style: none;
-}
 h1,
 h3 {
   font-family: 'montserrat';
@@ -24,4 +16,18 @@ h3 {
 h1 {
   font-weight: 400;
   color:white;
+}
+@media only screen and (max-width: 600px) {
+    pre.code {
+        font-size: 10px
+    }
+    h1{
+      font-size:23px;
+    }
+    h3{
+      font-size:20px;
+    }
+  }
+ul {
+  list-style: none;
 }
