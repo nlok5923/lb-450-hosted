@@ -39,7 +39,7 @@ class App extends Component {
             if (data.data.name !== 'README.md') {
               return (
                 <ul>
-                  <h3 className="text-center">{data.data.name}</h3>
+                  <h3 className="text-center">{data.data.name.split('.').slice(0, -1).join('.')}</h3>
                   <li>
                     <pre className="code">
                       <code>{atob(data.data.content)}</code>
