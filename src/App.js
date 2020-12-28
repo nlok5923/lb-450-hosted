@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import ReactTooltip from 'react-tooltip';
 import './App.css';
 
 class App extends Component {
@@ -33,13 +34,14 @@ class App extends Component {
     const { code, repo_data } = this.state;
     return (
       <div>
-        <h1 className="text-center">Question's by Babbar bhaiya</h1>
+        <h1 className="text-center ">Question's by Babbar bhaiya</h1>
         <div className="container ">
           {repo_data.map((data) => {
             if (data.data.name !== 'README.md') {
               return (
                 <ul>
-                  <h3 className="text-center">{data.data.name.split('.').slice(0, -1).join('.')}</h3>
+                  <h3 className="text-center truncate" data-tip={data.data.name.split('.').slice(0, -1).join('.')}>{data.data.name.split('.').slice(0, -1).join('.')}</h3>
+                  <ReactTooltip />
                   <li>
                     <pre className="code">
                       <code>{atob(data.data.content)}</code>

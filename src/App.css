@@ -31,3 +31,10 @@ h1 {
 ul {
   list-style: none;
 }
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 95%;
+}
